@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mayanikar – Premium men's clothing shop. Explore shirts, t-shirts, pants, shoes, watches, and more from top brands." />
+  <title>Mayanikar – Premium Men's Clothing</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <img src="images/logo/final-logo.png" alt="StyleMen Logo" class="logo-img">
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Menu Links -->
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+          <li><a href="#products" class="nav-link" id="link-products">Products</a></li>
+          <li><a href="#offers" class="nav-link" id="link-offers">Offers</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO / BANNER SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <img src="images/background-img.jpeg" alt="Mayanikar Brand House Fashion Banner"
+      class="hero-bg-img" onerror="this.style.display='none'" />
+    <div class="hero-content">
+      <p class="hero-tagline">New Season Collection</p>
+      <h1 class="hero-title">Mayanikar <br /><span class="accent">Brand House</span></h1>
+      <p class="hero-subtitle">Elevate your style with premium menswear.</p>
+      <a href="#products" class="btn-primary" id="hero-cta">Explore Collection</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCT CATEGORIES SECTION
+  ============================================================ -->
+  <section class="section categories-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Category Grid -->
+      <div class="categories-grid" id="categories-grid">
+
+        <!-- Shirts -->
+        <article class="category-card" id="cat-shirts" data-category="shirts" tabindex="0" role="button"
+          aria-label="View Shirts">
+          <div class="card-img-wrap">
+            <img src="images/shirts/WhatsApp Image 2026-03-26 at 9.28.49 PM.jpeg" alt="Shirts" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Shirts</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Shirts</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- T-Shirts -->
+        <article class="category-card" id="cat-tshirts" data-category="tshirts" tabindex="0" role="button"
+          aria-label="View T-Shirts">
+          <div class="card-img-wrap">
+            <img src="images/t-shirts/WhatsApp Image 2026-03-26 at 9.28.30 PM.jpeg" alt="T-Shirts" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>T-Shirts</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">T-Shirts</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Pants -->
+        <article class="category-card" id="cat-pants" data-category="pants" tabindex="0" role="button"
+          aria-label="View Pants">
+          <div class="card-img-wrap">
+            <img src="images/pants/WhatsApp Image 2026-03-26 at 9.35.14 PM.jpeg" alt="Pants" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Pants</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Pants</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Night Pants -->
+        <article class="category-card" id="cat-nightpants" data-category="nightpants" tabindex="0" role="button"
+          aria-label="View Night Pants">
+          <div class="card-img-wrap">
+            <img src="images/night_pants/WhatsApp Image 2026-03-26 at 9.26.02 PM.jpeg" alt="Night Pants"
+              class="card-img" onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Night Pants</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Night Pants</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Shoes -->
+        <article class="category-card" id="cat-shoes" data-category="shoes" tabindex="0" role="button"
+          aria-label="View Shoes">
+          <div class="card-img-wrap">
+            <img src="images/shoes/WhatsApp Image 2026-03-25 at 8.48.05 PM (1).jpeg" alt="Shoes" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Shoes</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Shoes</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Slippers -->
+        <article class="category-card" id="cat-slippers" data-category="slippers" tabindex="0" role="button"
+          aria-label="View Slippers">
+          <div class="card-img-wrap">
+            <img src="images/slippers/WhatsApp Image 2026-03-26 at 9.29.04 PM.jpeg" alt="Slippers" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Slippers</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Slippers</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Sunglasses -->
+        <article class="category-card" id="cat-sunglasses" data-category="sunglasses" tabindex="0" role="button"
+          aria-label="View Sunglasses">
+          <div class="card-img-wrap">
+            <img src="images/sunglasses/sunglass5.jpg" alt="Sunglasses" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Sunglasses</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Sunglasses</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Undergarments -->
+        <article class="category-card" id="cat-undergarments" data-category="undergarments" tabindex="0" role="button"
+          aria-label="View Undergarments">
+          <div class="card-img-wrap">
+            <img src="images/undergarments/undergarment.jpg" alt="Undergarments" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Undergarments</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Undergarments</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Watches -->
+        <article class="category-card" id="cat-watches" data-category="watches" tabindex="0" role="button"
+          aria-label="View Watches">
+          <div class="card-img-wrap">
+            <img src="images/watches/WhatsApp Image 2026-03-27 at 9.15.36 AM (1).jpeg" alt="Watches" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Watches</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Watches</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Hoodies -->
+        <article class="category-card" id="cat-hoodies" data-category="hoodies" tabindex="0" role="button"
+          aria-label="View Hoodies">
+          <div class="card-img-wrap">
+            <img src="images/hoodies/WhatsApp Image 2026-03-26 at 9.33.31 PM.jpeg" alt="Hoodies" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Hoodies</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Hoodies</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+        <!-- Loafers -->
+        <article class="category-card" id="cat-loafers" data-category="loafers" tabindex="0" role="button"
+          aria-label="View Loafers">
+          <div class="card-img-wrap">
+            <img src="images/loafers/WhatsApp Image 2026-03-26 at 9.52.56 PM (1).jpeg" alt="Loafers" class="card-img"
+              onerror="this.src=''; this.parentElement.classList.add('img-placeholder')" />
+            <div class="card-img-placeholder"><span>Loafers</span></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">Loafers</h3>
+            <span class="card-arrow">→</span>
+          </div>
+        </article>
+
+      </div>
+      <!-- /categories-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCT DETAILS SECTION (dynamically populated by JS)
+  ============================================================ -->
+  <section class="section product-details-section hidden" id="product-details">
+    <div class="container">
+
+      <!-- Section header (title updated by JS) -->
+      <div class="section-header">
+        <button class="btn-back" id="btn-back" aria-label="Back to categories">← Back</button>
+        <p class="section-label" id="details-label">Category</p>
+        <h2 class="section-title" id="details-title">Products</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Product grid (populated by JS) -->
+      <div class="products-grid" id="products-grid">
+        <!-- JS inserts product cards here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OFFER SECTION
+  ============================================================ -->
+  <section class="offer-section" id="offers">
+    <div class="offer-inner container">
+      <!-- <div class="offer-badge">Limited Time</div> -->
+      <h2 class="offer-headline">Flat <span class="offer-percent">5% OFF</span></h2>
+      <p class="offer-sub">on All Products – No Minimum Purchase!</p>
+      <!-- <div class="offer-tag">Use code: <strong>STYLE5</strong></div> -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Visit Us</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Phone -->
+        <div class="contact-card" id="contact-phone">
+          <div class="contact-icon">📞</div>
+          <h3 class="contact-card-title">Call Us</h3>
+          <p class="contact-info">+91 97677 72837</p>
+          <p class="contact-info">+91 99702 12816</p>
+        </div>
+
+        <!-- Address -->
+        <div class="contact-card" id="contact-address">
+          <div class="contact-icon">📍</div>
+          <h3 class="contact-card-title">Our Store</h3>
+          <p class="contact-info">Shree ram complex,<br />Chandani chowk,Chitali-Mayani Rd, Mayani,<br />Maharashtra –
+            415102</p>
+        </div>
+
+        <!-- Hours -->
+        <div class="contact-card" id="contact-hours">
+          <div class="contact-icon">🕐</div>
+          <h3 class="contact-card-title">Store Hours</h3>
+          <p class="contact-info">Mon – Sun: 9:00 AM – 9:00 PM</p>
+          <!-- <p class="contact-info">Sunday: 11:00 AM – 7:00 PM</p> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Mayanikar</span>
+      <p class="footer-copy">© 2026 Mayanikar. All rights reserved.</p>
+      <p class="footer-social">Follow us on <a href="https://www.instagram.com/mayanikar_brand_house_1709?igsh=eHY1aWhjbmQ1dGU5" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
